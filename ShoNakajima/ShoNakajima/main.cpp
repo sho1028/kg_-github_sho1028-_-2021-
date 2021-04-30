@@ -6,17 +6,15 @@ using namespace std;
 
 int main() {
     
-    int array[3];
-    cout<<"Please enter the numbers"<<endl;
-    
-    int value;
+    int array[]={12,345,6};
     int size=sizeof(array)/sizeof(array[0]);
-    for (int i=0;i<size;++i)
-    {
-        cin>>value;
-        array[i]=value;
-    }
-    cout<<"display it"<<endl;
+    
+    for(int i=0; i<size; ++i)
+        {
+         cout<<array[i]<<" ";
+        }
+    cout<<endl;
+    
     
     for(int j=0;j<size;++j)
     {
@@ -83,11 +81,9 @@ int main() {
             }
            
         }
-        if(st.empty()==true)
-        cout<<", ";
+        cout<<" ";
         
-        else
-            cout<<endl;
+        
         
     }
     cout<<endl;
